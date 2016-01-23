@@ -1,8 +1,14 @@
 host_name = ARGV[0]
 trigger_status = ARGV[1]
-trigger_name = ARGV[2]
-severity = ARGV[3]
-item_name = ARGV[4]
+severity = ARGV[2]
+
+trigger_name = ""
+ARGV.each_with_index do |arg,i|
+  if i > 2
+    trigger_name += arg
+  end
+end
+
 error = false
 msg = "-----Library Miner 通知-----"
 msg += "\n"
