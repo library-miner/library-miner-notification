@@ -1,0 +1,5 @@
+{
+  :passwd => '',
+  :chatid => '',
+  :msgaddress => 'http://xxx.xxx.xx.xx:5000/msg/'
+}
