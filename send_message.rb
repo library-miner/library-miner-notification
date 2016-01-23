@@ -9,19 +9,19 @@ msg += "\n"
 
 # 深刻度
 case severity.to_s
-  when "Warning" then
-    msg += "(*) WARNING!! (*) WARNING!!"
-  when "Average" then
-    msg += "(ghanta) 軽度のエラーを検知!! (ghanta)"
-    error = true
-  when "High" then
-    msg += "(bomb) 重度のエラーを検知!! (bomb)"
-    error = true
-  when "Disaster"
-    msg += "(bomb) 致命的なエラーを検知!! (bomb)"
-    error = true
-  else
-    msg += "(*) お知らせがあるよ (*)"
+when "Warning" then
+  msg += "(*) WARNING!! (*) WARNING!!"
+when "Average" then
+  msg += "(ghanta) 軽度のエラーを検知!! (ghanta)"
+  error = true
+when "High" then
+  msg += "(bomb) 重度のエラーを検知!! (bomb)"
+  error = true
+when "Disaster"
+  msg += "(bomb) 致命的なエラーを検知!! (bomb)"
+  error = true
+else
+  msg += "(*) お知らせがあるよ (*)"
 end
 msg += "\n\n"
 
