@@ -1,0 +1,1 @@
+外部ライブラリー検索サービス Library Miner の Zabbix + Skype 通知用スクリプト
